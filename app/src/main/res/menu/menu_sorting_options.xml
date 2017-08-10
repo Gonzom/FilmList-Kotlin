@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_sort_by_timestamp"
+        android:orderInCategory="10"
+        android:title="@string/action_sort_by_date_added" />
+
+    <item
+        android:id="@+id/action_sort_by_title"
+        android:orderInCategory="20"
+        android:title="@string/action_sort_by_title" />
+
+    <item
+        android:id="@+id/action_sort_by_year"
+        android:orderInCategory="30"
+        android:title="@string/action_sort_by_year" />
+
+    <item
+        android:id="@+id/action_sort_by_rating"
+        android:orderInCategory="40"
+        android:title="@string/action_sort_by_rating" />
+
+    <item
+        android:id="@+id/action_sort_by_watched"
+        android:orderInCategory="50"
+        android:title="@string/action_sort_by_seen" />
+
+    <item
+        android:id="@+id/action_sort_by_ascending"
+        android:orderInCategory="60"
+        android:title="@string/action_sort_by_ascending_order" />
+
+    <item
+        android:id="@+id/action_sort_by_descending"
+        android:orderInCategory="70"
+        android:title="@string/action_sort_by_descending_order" />
+
+</menu>

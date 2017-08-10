@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:focusable="true"
+    android:focusableInTouchMode="false"
+    tools:showIn="@layout/content_import_film">
+
+    <TextView
+        android:id="@+id/fragment_import_text_view_empty_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/empty_list_start_search"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorTextBlack" />
+
+    <TextView
+        android:id="@+id/fragment_import_text_view_search_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorTextBlack" />
+
+    <tech.gonzo.filmlist.ui.views.EmptyRecyclerView
+        android:id="@+id/fragment_import_empty_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_import_text_view_search_results"
+        android:layout_marginTop="4dp"
+        tools:listitem="@android:layout/simple_list_item_1" />
+
+</RelativeLayout>

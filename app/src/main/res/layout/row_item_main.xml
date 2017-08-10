@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutListItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="4dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/row_item_main_image_view_poster"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/content_description_no_image"
+        android:src="@android:drawable/ic_menu_report_image" />
+
+    <TextView
+        android:id="@+id/row_item_main_text_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/row_item_main_image_view_poster"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/row_item_main_image_view_poster"
+        android:layout_toRightOf="@+id/row_item_main_image_view_poster"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/row_item_main_text_view_directed_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/row_item_main_text_view_title"
+        android:layout_alignStart="@+id/row_item_main_text_view_title"
+        android:layout_below="@+id/row_item_main_text_view_title"
+        android:layout_marginTop="4dp"
+        android:text="@string/header_director"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/row_item_main_text_view_directer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/row_item_main_text_view_directed_by"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/row_item_main_text_view_directed_by"
+        android:layout_toRightOf="@+id/row_item_main_text_view_directed_by"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/row_item_main_text_view_title"
+        android:layout_alignStart="@+id/row_item_main_text_view_title"
+        android:layout_below="@+id/row_item_main_text_view_directer"
+        android:layout_marginTop="4dp">
+
+        <RatingBar
+            android:id="@+id/row_item_main_rating_bar"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:isIndicator="true"
+            android:numStars="5" />
+
+        <ToggleButton
+            android:id="@+id/row_item_main_toggle_button"
+            style="Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_item_main_rating_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:checked="false"
+            android:focusable="false"
+            android:textOff="@string/toggle_not_seen"
+            android:textOn="@string/toggle_seen"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

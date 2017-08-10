@@ -1,0 +1,124 @@
+<resources>
+    <!-- Application name -->
+    <string name="app_name">FilmList</string>
+
+    <!-- Accessibility -->
+    <string name="content_description_film_poster">The Film\'s poster</string>
+    <!--<string name="content_description_user_picked_image">A user picked image representing the film</string>-->
+    <string name="content_description_no_image">A placeholder image as no film poster is available</string>
+
+    <!-- Menu items -->
+    <string name="action_sort">Sort</string>
+    <string name="action_clear_all_data">Clear all data</string>
+    <string name="action_save_film">Save film</string>
+    <string name="action_update_film_information">Update information</string>
+    <string name="action_share">Share</string>
+    <string name="action_sort_by_date_added">Sort by date added</string>
+    <string name="action_sort_by_title">Sort by title</string>
+    <string name="action_sort_by_year">Sort by release year</string>
+    <string name="action_sort_by_rating">Sort by rating</string>
+    <string name="action_sort_by_seen">Sort by seen</string>
+    <string name="action_sort_by_ascending_order">Sort by ascending order</string>
+    <string name="action_sort_by_descending_order">Sort by descending order</string>
+
+    <!-- Button names -->
+    <string name="toggle_not_seen">Not seen</string>
+    <string name="toggle_seen">Seen</string>
+    <string name="checkbox_seen_film">Seen Film?</string>
+
+    <!-- Hint strings -->
+    <string name="hint_search_enter_film_title">Enter film title</string>
+
+    <!-- Text fields -->
+    <string name="sorting_by">Sorting by: %1$s / %2$s</string>
+    <string name="header_title">Title: %1$s</string>
+    <string name="header_release_year">Release year:</string>
+    <string name="header_director">Directed by:</string>
+    <string name="header_plot">Plot:</string>
+    <string name="header_rate_this_film">Rate this film:</string>
+    <string name="header_imdb_rating">IMDB rating:</string>
+
+    <!-- Missing API strings -->
+    <string name="missing_info_no_plot_found">No plot information was found.</string>
+    <string name="missing_info_no_director_found">No director information found.</string>
+
+    <!-- Quantity text fields -->
+    <plurals name="number_of_search_results">
+        <item quantity="one">%1$d search result found.</item>
+        <item quantity="other">%1$d search results found.</item>
+    </plurals>
+
+    <!-- Empty list text fields -->
+    <string name="empty_list_start_search">Search for Films by titles.</string>
+    <string name="empty_list_no_search_results_found">No results found. Try again with a different search.</string>
+    <string name="empty_list_no_favorites">You haven\'t added a film to your favorites yet.</string>
+
+    <!-- Dialog strings -->
+    <string name="dialog_progress_generating_film">Generating film…</string>
+    <string name="dialog_progress_getting_updated_information">Getting updated information…</string>
+    <string name="dialog_progress_downloading_poster">Downloading poster…</string>
+    <string name="dialog_progress_saving_poster">Saving poster…</string>
+
+    <string name="dialog_option_title">Options</string>
+    <string name="dialog_option_edit_film">Edit film</string>
+    <string name="dialog_option_delete_film">Delete film</string>
+    <string name="dialog_option_update_data">Update data</string>
+    <string name="dialog_option_cancel">Cancel</string>
+    <string name="dialog_option_clear_list">Clear list</string>
+    <string name="dialog_option_later">Later</string>
+    <string name="dialog_option_turn_on">Turn on</string>
+
+    <string name="dialog_delete_film_title">Delete film?</string>
+
+    <string name="dialog_delete_all_films_title">Delete all films?</string>
+
+    <string name="dialog_network_connection_error_title">Trouble connecting to the internet</string>
+    <string name="dialog_network_connection_error_msg">Network connection is required for FilmList to get the film information.\nWould you like to turn on your connection?</string>
+
+    <string name="dialog_update_film_data_title">Update film data</string>
+    <string name="dialog_update_film_data_msg">Do you want to download the most recent data for this film?\nAn internet connection is required for the update.</string>
+
+    <!-- Toast strings -->
+    <string name="toast_film_now_marked_as_seen">%1$s is now marked as %2$s!</string>
+    <string name="toast_film_has_been_added">%1$s has been added to your list!</string>
+    <string name="toast_film_has_been_updated">%1$s has been updated!</string>
+
+    <!-- Toast Error strings -->
+    <!--<string name="toast_error_try_again_later">An error has occurred. Try again later.</string>-->
+    <string name="toast_error_cannot_share_film_tittle_missing">Can\'t share film. A title is mandatory.</string>
+    <string name="toast_error_cannot_save_film_problem_saving_image">Cannot save film. There was a problem saving the poster.</string>
+    <string name="toast_error_problem_downloading_image">There was a problem downloading image. Try again later.</string>
+    <string name="toast_error_clear_list_failed_list_empty">Your list is currently empty.</string>
+
+    <!-- Snackbar strings -->
+    <string name="snackbar_film_has_been_deleted">%1$s has been deleted from your list.</string>
+    <string name="snackbar_your_list_has_been_deleted">Your list has been deleted.</string>
+    <string name="snackbar_undo">Undo</string>
+
+    <!-- Snackbar error strings -->
+    <string name="snackbar_error_film_already_added_to_list">%1$s (%2$s) has been already added to your list.</string>
+
+    <!-- Share messages -->
+    <string name="share_with_title">Share with…</string>
+    <string name="share_msg_only_title">Check out this film: %1$s!</string>
+    <string name="share_msg_title_year">Check out this film: %1$s (%2$s)!</string>
+    <string name="share_msg_title_director">Check out this film: %1$s by %2$s!</string>
+    <string name="share_msg_title_rating">"Check out this film: %1$s.\nI gave it %2$s stars!</string>
+    <string name="share_msg_title_year_director">Check out this film: %1$s (%2$s) by %3$s!</string>
+    <string name="share_msg_title_director_rating">Check out this film: %1$s by %2$s.\nI gave it %3$s stars!</string>
+    <string name="share_msg_title_year_rating">Check out this film: %1$s (%2$s).\nI gave it %3$s stars!</string>
+    <string name="share_msg_title_year_director_rating">Check out this film: %1$s (%2$s) by %3$s.\nI gave it %4$s stars!</string>
+
+    <!-- Sorting strings -->
+    <string name="sorting_date_added">Date added</string>
+    <string name="sorting_title">Title</string>
+    <string name="sorting_year">Release year</string>
+    <string name="sorting_user_rating">Your rating</string>
+    <string name="sorting_seen">Seen</string>
+    <string name="sorting_ascending_order">Ascending</string>
+    <string name="sorting_descending_order">Descending</string>
+
+    <!-- Misc -->
+    <string name="poster_image_directory">Film Posters</string>
+
+</resources>

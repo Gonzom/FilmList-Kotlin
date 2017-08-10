@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.MainActivity"
+    tools:showIn="@layout/content_main">
+
+    <TextView
+        android:id="@+id/fragment_main_text_view_sorting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <tech.gonzo.filmlist.ui.views.EmptyRecyclerView
+        android:id="@+id/fragment_main_empty_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fragment_main_text_view_sorting"
+        tools:listitem="@layout/row_item_main" />
+
+    <TextView
+        android:id="@+id/fragment_main_text_view_empty_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/empty_list_no_favorites"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorTextBlack" />
+
+</RelativeLayout>
